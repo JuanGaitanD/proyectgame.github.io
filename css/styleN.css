@@ -1,0 +1,320 @@
+body {
+    background-color: #09111b; 
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+header {
+    width: 100%;
+    /* height: 100vh; */
+    background: linear-gradient(to bottom, rgba(0,0,0,.8),rgba(0,0,0,.5));
+    background-size: cover;
+}
+
+#contenedor {
+    max-width: 120rem;
+    width: 96%;
+    margin: 0 auto;
+}
+
+nav {
+    padding-top: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Metal Manta';
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 300;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+}
+
+.logo  span {
+    color: green;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+
+}
+
+nav ul li:nth-child(1){
+    animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+    animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+    animation-delay: 1s;
+}
+
+nav ul li a {
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+nav ul li a:last-child {
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: green;
+    left: 0;
+    transform:  scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a::before {
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before, 
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+@keyframes slideIn {
+    from {
+
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* carousel */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 0 0;
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+
+.carousel {
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgb(0,0,0,0.1);
+}
+
+.slider {
+    flex-direction: 0 0 auto;
+   margin-right: 45px; 
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /* transition: 2s; */
+    overflow: hidden;
+}
+
+.slider img {
+    width:50%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.slider-content {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(to right, #030b17 80%, #0c111b00) ;
+    color: #fff;
+    z-index: 2;
+}
+
+.game-title {
+    padding-left: 20px;
+    text-transform: capitalize;
+    margin-top: 80px;
+    color: green;
+    font-family: 'Metal Manta';
+    font-size: 40px;
+}
+
+.game-desc {
+    width: 80%;
+    padding: 20px;
+    opacity: 0.8;
+} 
+
+/* parte_Game */
+#art_game {
+    margin: 0 20px 0 20px;
+}
+
+.img_game {
+    height: 280px;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-style: solid;
+    transition: all .5s;
+    width: 182px;
+}
+  
+
+.animacion_game:hover .boton {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    color: black;
+}
+
+.animacion_game {
+    position: relative;
+    display: inline-block;
+}
+
+.animacion_game:hover .img_game {
+    transform: scale(1.03);
+}
+.boton {  
+    position: absolute;
+    bottom: -35px;
+    left: 91px;
+    transform: translateX(-50%);
+    padding: 5px 20px;
+    font-size: 15px;
+    width: 184px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    background-color:  rgb(0, 138, 0);
+    border: none;
+    font-family: 'Metal Manta';
+    font-weight: 900;
+}
+
+#contenedor_dos {
+    height: auto;
+    width: 100%;
+    margin-bottom: 60px;
+    padding-inline: 5%;
+}
+
+section h2 {
+    color: green;
+    font-family: 'Metal Manta';
+    font-size: 25px;
+    margin: 50px 0 10px 30px;
+}
+
+/* footer */
+
+.footer_links ul li {
+    list-style: none;
+}
+
+.contenedor_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+footer {
+    text-transform: capitalize;
+    background: linear-gradient(to bottom, rgba(0,0,0,.8),rgba(0,0,0,.5));
+    background-size: cover;
+}
+
+.footer_links {
+    padding: 0 20px;
+    width: 25%;
+}
+
+.footer_links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #37a037;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer_links ul li {
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+    margin-left: -30px;
+}
+
+.footer_links ul a{
+    
+    margin-bottom: 5px;
+}
+
+ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.social_links {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: white;
+    transition: all .5s ease;
+}
+
+.social_links a:hover {
+    background-color: #37a037;
+}
+
+@media screen and (max-width: 768px) {
+    #contenedor_dos{padding-left: 18%;}
+}

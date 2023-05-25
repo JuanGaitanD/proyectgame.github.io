@@ -1,0 +1,298 @@
+body{
+    background-color: #000;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#home_header{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#section_home{   
+    background-color: white;
+    width: 500px;
+    margin-top: 2%;
+    margin-inline: 38%;
+    padding: 20px;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    /* gap: 20px; */
+}
+
+#botones_uno{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Metal Mania', cursive;
+    font-size: 108px;
+}
+
+#Galeria_juegos_botton, #Portal_pagos_botton{
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size:x-large;
+    text-decoration: none;
+    color: white;
+}
+
+#Galeria_juegos_botton:hover, #Portal_pagos_botton:hover{
+    transform: scale(1.12);
+    text-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+#play_start:hover{
+    transform: scale(1.12);
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+#botones_dos{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+#play_start{
+    font-size: 150px;
+    color: black;
+}
+
+#espacio {
+    background-color: blue;
+}
+
+#logo_retro {
+    /* background-color: aquamarine; */
+    font-size: 50px;
+    text-align: center;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+#section_retro{
+    padding: 10px;
+    text-align: center;
+}
+
+#section_retro:hover{
+    opacity: 1;
+    background-color: gainsboro;
+    border-radius: 12px;
+    > span{
+        opacity: 0;
+    }
+}
+
+#container_retro{
+    border-radius: 24px;
+}
+
+#img_retro{
+    width: 100%;
+    border-radius: 6px;
+    height: 400px;
+}
+
+#logo_span_retro{
+    font-family: 'Metal Mania', cursive;
+    margin: 0;
+}
+
+#Title_game{
+    font-size: 72px;
+    margin-top: 20px;
+    font-family: 'Metal Mania', cursive;
+}
+
+#puntaje{
+    font-size: 25px;
+}
+
+#span_retro{
+    color: black;
+    background-color: cyan;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#span_retro:hover{
+    clear: both;
+    color: white;
+    background-color: cyan;
+    opacity: 100%;
+    z-index: 100;
+}
+
+#img_retro:hover{
+    transition: all .5s;
+    transform: scale(1.25);
+    opacity: 1;
+}
+
+#ReIniciar_2048{
+    background-color: #cdc1b5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo_pagos #logo_span_retro{
+    font-size: 72px;
+    
+}
+
+#logo_pagos_g{
+   padding: 0;
+   margin: 0;
+}
+
+.btn_nav{
+    color:white
+}
+
+.btn_nav:hover{
+    color: black;
+    background-color: white;
+}
+
+#nav{
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+#btn_pagos{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+#contenedor_pagos{
+    display: grid;
+    text-align: center;
+    background-color: white;
+    height: 660px;
+    margin: 0px;
+}
+
+#footer_pagos > a, #footer_pagos > span > a{
+    text-decoration: none;
+}
+
+#contenedor_pagos > section{
+    background-color: white;
+    color: #000;
+    padding: 30px;
+}
+
+/* #contenedor_pagos > aside{
+    background-color: cornsilk;
+    color: #000;
+    border-radius: 20px;
+    border-left: 1px solid #00000063;
+    padding: 20px;
+} */
+
+#contenedor_pagos > section > nav > a{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+}
+
+.nav_pagos:focus, .nav_pagos:hover{
+    border-bottom: 5px solid #333333;
+    cursor: pointer;
+}
+
+#contenedor_pagos > section > nav{
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #00000023;
+    height: 55px;
+    border-radius: 10px;
+    
+    display: grid;
+    grid-template-columns: 0.66fr 0.66fr 0.66fr;
+}
+
+#contenedor_pagos > section > h1{
+    font-size: 50px; 
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+#contenedor_pagos > section > #juegos_compra > article{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#juegos_compra, #login, #seleccion_game{
+    display: none;
+}
+
+th{
+    text-align: left; 
+    padding: 5px;
+    width: fit-content;
+    border-collapse: collapse;
+    border-bottom: 1px solid gray;
+    background-color: rgb(224, 223, 223);
+}
+
+#img_compra, #img_compra > img{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#img_compra{margin-bottom: 20px;}
+
+#compra_form{
+    display: inline-block;
+}
+
+#compra_form > input{
+    text-align: right;
+    width: 100px;
+}
+
+#a_terminos, #datos_valid, #e4{
+    display: none;
+    color: red;
+}
+
+#button_log{
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #section_home{
+        margin: 2%;
+        margin-inline: 15%;
+        width: 320px;
+        padding: 10px;
+    }
+
+    #play_start{font-size: 100px;}
+
+    #nav{margin-top: 5px;}
+    .btn_nav{background-color: white; color:#000}
+
+    #logo_pagos #logo_span_retro {font-size: 50px;}
+}
